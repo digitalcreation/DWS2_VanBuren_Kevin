@@ -51,8 +51,8 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: #fff;
-		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		background: #ffedea;
+		font: 16px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
@@ -65,6 +65,17 @@
 	.container h2 {
 		padding: 0 0 1% 0;
 		border-bottom: solid 1px #777;
+	}
+	img {
+		max-width: 50%;
+		border: solid 1px #777;
+		float: left;
+		margin: 1%;
+	}
+	.container .fifteen.columns p {
+		margin: 1% 0 0 0;
+		width: 45%
+		float: right;
 	}
 
 
