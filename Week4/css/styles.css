@@ -302,11 +302,11 @@ footer a:hover {
 
 @media (max-width: 828px){
     /*Columns for small mobile devices*/
-    h1, h2, h3, {
+    h1, h2, h3 {
         font-size: 95%;
     }
     h1 {
-        padding-top: 20%;
+        padding-top: 10%;
     }
     .test {
         float: left;
