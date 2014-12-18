@@ -302,6 +302,12 @@ footer a:hover {
 
 @media (max-width: 828px){
     /*Columns for small mobile devices*/
+    h1, h2, h3, p {
+        font-size: 95%;
+    }
+    .test {
+        float: left;
+    }
     .section-mobile {
         clear: both;
         width: 97%;
@@ -346,6 +352,7 @@ footer a:hover {
     .mobile-superPC {
         background: url(../images/sm-computer.png) no-repeat center;
     }
+
 }
 
 @media (max-width: 992px){
