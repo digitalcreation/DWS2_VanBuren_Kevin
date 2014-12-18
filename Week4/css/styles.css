@@ -314,6 +314,9 @@ footer a:hover {
         width: 80%;
         margin: 10%;
     }
+    p {
+        padding: 4%;
+    }
     /*Columns for small mobile devices*/
     h2, h3 {
         font-size: 95%;
