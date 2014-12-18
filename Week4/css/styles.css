@@ -299,7 +299,11 @@ footer a:hover {
     text-decoration: underline;
 }
 /* End Footer */
-
+@media (max-width: 468px) {
+    body {
+        max-width: 468px;
+    }
+}
 @media (max-width: 828px){
     /*Columns for small mobile devices*/
     h1, h2, h3 {
