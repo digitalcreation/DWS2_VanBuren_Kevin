@@ -301,15 +301,25 @@ footer a:hover {
 /* End Footer */
 
 @media (max-width: 828px){
+    body {
+        background: #050b36;
+    }
+    .test {
+        font: 1em 'Arial', sans-serif;
+        float: left;
+        width: 60%;
+        margin: 1% 0 1% 20%;
+    }
+    input[type="submit"] {
+        width: 80%;
+        margin: 10%;
+    }
     /*Columns for small mobile devices*/
     h1, h2, h3 {
         font-size: 95%;
     }
     h1 {
         padding-top: 10%;
-    }
-    .test {
-        float: left;
     }
     .section-mobile {
         clear: both;
