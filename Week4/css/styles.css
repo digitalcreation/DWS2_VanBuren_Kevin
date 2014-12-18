@@ -299,9 +299,9 @@ footer a:hover {
     text-decoration: underline;
 }
 /* End Footer */
-@media (max-width: 468px) {
+@media (max-width: 28px) {
     body {
-        max-width: 168px;
+        max-width: 50px;
     }
 }
 @media (max-width: 828px){
