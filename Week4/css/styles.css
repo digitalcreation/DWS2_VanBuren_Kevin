@@ -301,7 +301,7 @@ footer a:hover {
 /* End Footer */
 @media (max-width: 468px) {
     body {
-        max-width: 468px;
+        max-width: 168px;
     }
 }
 @media (max-width: 828px){
