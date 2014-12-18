@@ -315,10 +315,11 @@ footer a:hover {
         margin: 10%;
     }
     /*Columns for small mobile devices*/
-    h1, h2, h3 {
+    h2, h3 {
         font-size: 95%;
     }
     h1 {
+        font-size: 100%;
         padding-top: 10%;
     }
     .section-mobile {
