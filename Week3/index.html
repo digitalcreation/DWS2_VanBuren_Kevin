@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Generic Property Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Generic Property Management Company</h1>
+    <h2>Lease Application Form</h2>
+    <form class="group">
+        <!-- Contact Details -->
+        <fieldset class="field">
+            <legend>Contact Details</legend>
+            <div class="formContent">
+                <div class="title">
+                    <label for="name">First & Last Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="name" placeholder="John Doe" maxlength="30" id="name" required="required" autofocus autocomplete="on"/>
+                </div>
+                <div class="title">
+                    <label for="phoneNumber">Phone Number</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="phoneNumber" placeholder="555-555-5555" maxlength="12" id="phoneNumber" required="required" autocomplete="on" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+                </div>
+                <div class="title">
+                    <label for="address">Address</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="address" placeholder="123 Street Name" maxlength="30" id="address" required="required" autocomplete="on"/>
+                </div>
+                <div class="title">
+                    <label for="state">State</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="state" placeholder="California" maxlength="30" id="state" required="required" autocomplete="on"/>
+                </div>
+                <div class="title">
+                    <label for="city">City</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="city" placeholder="Los Angeles" maxlength="30" id="city" required="required" autocomplete="on"/>
+                </div>
+                <div class="title">
+                    <label for="zipCode">Zip Code</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="name" placeholder="!ADD BIRTHDATE CAL! 12345" maxlength="5" id="zipCode" required="required" autocomplete="on" pattern="[0-9]+"/>
+                </div>
+                <div class="title">
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="input">
+                    <input type="email" name="email" placeholder="email@example.com" maxlength="30" id="email" required="required" autocomplete="on"/>
+                </div>
+                <div class="title">
+                    <label for="socialSecurity">Social Security Number</label>
+                </div>
+                <div class="input">
+                    <input type="password" class="ssn" name="SSN" placeholder="555-55-5555" maxlength="30" id="socialSecurity" required="required" autocomplete="off" pattern="\d{3}[\-]\d{2}[\-]\d{4}"/>
+                </div>
+                <div class="title">
+                    <label for="birthdate">Date of Birth</label>
+                </div>
+                <div class="input">
+                    <input id="birthdate" type="date" value="1990-01-01"/>
+                </div>
+            </div>
+        </fieldset>
+        <!-- End Contact Details -->
+
+        <!-- Employment -->
+        <fieldset class="field">
+            <legend>Employment & Income</legend>
+            <div class="title">
+                <label for="employer">Place of Employment</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" placeholder="Employer Name" maxlength="30" id="employer" required="required" autocomplete="on"/>
+            </div>
+            <div class="title">
+                <label for="employerAddress">Employer Address</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" placeholder="123 Street Name" maxlength="30" id="employerAddress" required="required" autocomplete="on"/>
+            </div>
+            <div class="title">
+                <label for="employerState">Employer State</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" placeholder="California" maxlength="30" id="employerState" required="required" autocomplete="on"/>
+            </div>
+            <div class="title">
+                <label for="employerCity">Employer City</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" placeholder="Los Angeles" maxlength="30" id="employerCity" required="required" autocomplete="on"/>
+            </div>
+            <div class="title">
+                <label for="employerZip">Employer Zip Code</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" placeholder="12345" maxlength="30" id="employerZip" required="required" autocomplete="on" pattern="[0-9]+"/>
+            </div>
+            <div class="title">
+                <label for="employmentLength">Time With Current Employer</label>
+            </div>
+            <div class="input">
+                <select name="employmentLength" id="employmentLength">
+                    <option value="choose" selected="selected">Select One...</option>
+                    <option value=">1">Less than 1 year</option>
+                    <option value="1-3">1-3 years</option>
+                    <option value="3-5">3-5 years</option>
+                    <option value="5+">5+ years</option>
+                </select>
+            </div>
+            <div class="title">
+                <label for="income">Annual Income</label>
+            </div>
+            <div class="input">
+                <input type="text" name="name" placeholder="$25,000" id="income" required autocomplete="off"/>
+            </div>
+        </fieldset>
+        <!-- End Employment -->
+
+        <!-- Animals -->
+        <fieldset class="field radioCheck">
+            <legend>Animals</legend>
+                <span class="ratingTitle">What type of animal do you own:</span>
+                <div class="chkRadioTitle">
+                    <label for="none" class="inline">None</label>
+                </div>
+                <input type="checkbox" name="critter" value="none" id="none">
+                <div class="chkRadioTitle">
+                    <label for="cat">Cat</label>
+                </div>
+                <input type="checkbox" name="critter" value="cat" id="cat"/>
+                <div class="chkRadioTitle">
+                    <label for="dog">Dog</label>
+                </div>
+                <input type="checkbox" name="critter" value="dog" id="dog"/>
+                <div class="chkRadioTitle">
+                    <label for="other">Fish / Reptile / Other</label>
+                </div>
+                <input type="checkbox" name="critter" value="other" id="other"/>
+        </fieldset>
+        <!-- End Animals -->
+
+        <!-- Contact -->
+        <fieldset class="field radioCheck">
+            <legend>Contact</legend>
+            <span class="ratingTitle">Preferred method of contact:</span>
+            <div class="chkRadioTitle">
+                <label for="emailRadio">Email</label>
+            </div>
+            <input type="radio" name="contact" value="email" checked="checked" id="emailRadio"/>
+            <div class="chkRadioTitle">
+                <label for="mail">Mail</label>
+            </div>
+            <input type="radio" name="contact" value="mail" id="mail"/>
+            <div class="chkRadioTitle">
+                <label for="phone">Phone</label>
+            </div>
+            <input type="radio" name="contact" value="phone" id="phone"/>
+        </fieldset>
+        <!-- End Contact -->
+
+        <!-- Rate This Page -->
+        <fieldset class="field">
+            <legend>Additional Information</legend>
+            <div class="title">
+                <label for="userSource">How long have you been at your current residence?</label>
+            </div>
+            <div class="input">
+                <select name="source" id="userSource">
+                    <option value="select" selected="selected">
+                        Select One...
+                    </option>
+                    <option value="1year">
+                        1 year
+                    </option>
+                    <option value="2-5years">
+                        2 - 5 years
+                    </option>
+                    <option value="6years">
+                        6+ years
+                    </option>
+                </select>
+            </div>
+            <div class="title">
+                <label for="userComments">Additional comments?</label>
+            </div>
+            <div class="input">
+                <textarea name="comments" id="userComments" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div id="submitButton">
+                <input id="subButton" type="submit" value="Submit" />
+            </div>
+        </fieldset><!-- End Rate This Page -->
+    </form>
+</body>
+</html>

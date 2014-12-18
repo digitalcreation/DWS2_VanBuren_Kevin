@@ -1,0 +1,229 @@
+body{
+    background: url(../images/background-pattern.png);
+    background: -webkit-radial-gradient(  rgba(202, 194, 222, 0.40) 20%, rgba(45, 46, 114, 0.20) 80%) no-repeat, url(../images/background-pattern.png); /* Chrome10+,Safari5.1+ */
+    width: 80%;
+    margin: 0 10% 0 10%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #f9e2dc;
+}
+nav {
+    background-color: #000;
+    width: 250px;
+}
+
+/* Form Body */
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    text-shadow: 1px 1px 1px #000;
+}
+legend {
+    text-align: center;
+    color: #f9e2dc;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 4%;
+}
+fieldset {
+    background-color: rgba(14, 14, 45, 0.70);
+    padding-bottom: 3%;
+    box-shadow: inset 0 3px 20px #12072a;
+    border: solid 1px #100d3f;
+    border-radius: 5px;
+    margin: 0 0 3% 0;
+}
+.formContent {
+    padding: 0 0 0 0;
+}
+label, span { /*label*/
+    float: left;
+    display: block;
+    width: 40%;
+    margin: 0 0 0 5%;
+    font-weight: bold;
+    color: #979797;
+    padding-top: 4%;
+    clear: both;
+}
+form {
+    background-color: rgba(14, 14, 45, 0.17);
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 1% 4% 1% 4%;
+}
+legend {
+    color: #ffffff;
+}
+/* End Form Body */
+
+/* Text Inputs */
+.input {
+    float: right;
+    border: none;
+    background: none;
+    border-radius: 0;
+    padding-top: 3%;
+    margin: 0 5% 0 0;
+}
+input[type=text], input[type=password], input[type=email], textarea {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    padding: 5px;
+    background: #EEE;
+    border: 1px solid #fff;
+    color: #000080;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 2px #777, inset 0 -5px 3px #eee;
+}
+
+input:focus, textarea:focus {
+    outline: solid rgba(0, 0, 255, 0.24);
+}
+input[type=password]{
+    padding-left: 50px;
+    width: 89px;
+}
+input.ssn {
+    background: url(../images/secure-SSN.png) no-repeat 5px 5px,
+linear-gradient(#fff, #ddd);
+    font-weight: bold;
+    color: #000080;
+}
+/* End Text Inputs */
+
+/* Radio/Check Inputs */
+input[type="radio"], input[type="checkbox"] {
+    float: right;
+    width: 10%;
+    margin: 4% 0 0 0;
+    font-weight: bold;
+    color: #979797;
+    padding: 0;
+    height: 20px;
+}
+.radio {
+    clear: both;
+    padding-top: 5%;
+}
+/* End Radio/Check Inputs */
+
+/* Drop Down Menu */
+select {
+    display: block;
+    width: 263px;
+    margin: 0 auto;
+    padding: 5px;
+    background: #EEE;
+    border: 1px solid #fff;
+    color: rgba(0, 0, 255, 0.24);
+    border-radius: 5px;
+    box-shadow: inset 0 2px 2px #777, inset 0 -5px 3px #eee;
+}
+option {
+    color: #000080;
+}
+/* End Drop Down Menu */
+
+/* Submit Button */
+input[type=submit] {
+    font-size: 1.2em;
+    padding: 1.5%;
+    background: #777;
+    color: white;
+    border: none;
+    float: right;
+    margin: 4% 45% 0 0;
+    border-radius: 5px;
+    clear: both;
+}
+/* End Submit Button */
+
+/* Group */
+.group:before, .group:after { content: "\0020";
+    display: block; height: 0; overflow: hidden;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+/* End Group */
+
+
+/* Screen Adjustments */
+@media (min-width: 1200px) {
+    .title, input {
+        margin: 0 0 0 5%;
+    }
+    input[type=date]{
+        margin: 0 20% 0 0;
+    }
+    .ratingTitle {
+        text-align: center;
+        clear: both;
+        margin: 0 auto;
+        padding: 0;
+        margin-left: 28%;
+    }
+    input[type=checkbox], input[type=radio] {
+        margin: 3.5% 25% 0 0;
+    }
+    .chkRadioTitle {
+        margin: 0 0 0 15%;
+    }
+}
+
+@media (max-width: 992px) {
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .ratingTitle {
+        text-align: center;
+        clear: both;
+        margin: 0 auto;
+        padding: 0;
+        margin-left: 28%;
+    }
+    input[type=checkbox], input[type=radio] {
+        margin: 3.5% 15% 0 0;
+    }
+    .chkRadioTitle {
+        margin: 0 0 0 10%;
+    }
+}
+
+@media (max-width: 740px) {
+    .title {
+        margin: 0 0 0 18%;
+    }
+    .input {
+        position: relative;
+        margin: 0 25% 0 0;
+    }
+    input[type="password"] {
+        width: 205px;
+    }
+    input[type="date"] {
+        padding: 1%;
+        width: 250px;
+    }
+}
+@media (max-width: 552px) {
+    .title {
+        margin: 0;
+    }
+    .input {
+        margin: 0 10% 0 0;
+    }
+}
+@media (max-width: 425px) {
+    .input {
+        margin: 0 3.5% 0 0;
+    }
+}
+/* End Screen Adjustments */

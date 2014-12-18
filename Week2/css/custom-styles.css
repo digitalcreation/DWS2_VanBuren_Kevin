@@ -1,0 +1,89 @@
+/*Images*/
+img {
+    border: solid;
+}
+/*End Images*/
+
+/*Body*/
+.jumbotron {
+    background-color: #ecd1d1;
+}
+.container {
+    background-color: rgb(255, 231, 224);
+}
+body {
+    background-color: #000000;
+}
+h2, p {
+    clear: both;
+}
+#gal01, #gal02 {
+    margin: 0 5% 0 0;
+}
+#form {
+    box-shadow: 1px 0 1px 1px #808645;
+    padding: 0 0 2% 20%;
+    background-color: #fff4f0;
+}
+/*End Body*/
+
+/* Footer */
+footer {
+    margin-bottom: 2%;
+
+}
+
+
+/* End Footer */
+
+
+/* Screen Size Dependent Adjustments */
+@media (min-width: 768px) {
+    img[title="Cooking01"], img[title="Cooking03"] {
+        margin: 0 0 2% 0;
+    }
+    img[title="Cooking02"] {
+        margin: 0 0 0 0;
+    }
+    #table {
+        clear: both;
+    }
+    #nav111 {
+        margin-bottom: 15%;
+    }
+}
+@media (min-width: 992px) {
+    img[title="Cooking01"], img[title="Cooking03"] {
+        margin: 10% 0 0 0;
+    }
+    img[title="Cooking02"] {
+        margin: 20% 0 0 0;
+    }
+    #table {
+        clear: both;
+    }
+    #nav111 {
+        margin-bottom: 6%;
+    }
+}
+@media (min-width: 1200px) {
+    img[title="Cooking01"] {
+        margin: 0 0 0 0;
+    }
+    img[title="Cooking02"] {
+        margin: 10% 0 0 0;
+    }
+    img[title="Cooking03"] {
+        margin: 0 0 2% 0;
+    }
+    .img-gal {
+        float: left;
+    }
+    #table {
+        clear: none;
+    }
+    #nav111 {
+        margin-bottom: 5%;
+    }
+}
+/* End Screen Size Dependent Adjustments */
